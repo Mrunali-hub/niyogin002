@@ -47,6 +47,9 @@ export default {
     "@nuxtjs/pwa",
     "@nuxt/image",
   ],
+  img:{
+    provider:"ipx"
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

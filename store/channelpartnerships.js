@@ -39,7 +39,7 @@ export const actions = {
       {
         auth: {
           username: "xSgqh",
-          password: "",
+          password: "GKPejXE}c",
         },
       }
     );

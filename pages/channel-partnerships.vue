@@ -261,6 +261,7 @@ export default {
     if (process.client && window) {
       window.scrollTo(0, 0);
     }
+    console.log("Item content:", this.item.content);
   },
   methods: {
     async onSubmit(args) {
