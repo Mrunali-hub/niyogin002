@@ -1,0 +1,51 @@
+.hire-process-section {
+  padding-top: 140px;
+  .section-title {
+    text-align: center;
+  }
+  .section-desc {
+    margin-top: 53px;
+    text-align: center;
+  }
+  .process-title {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    color: $black-shade-1;
+    text-align: center;
+  }
+  .list-unstyled {
+    margin-top: 40px;
+    li {
+      display: flex;
+      &~li {
+        margin-top: 84px;
+      }
+      .icon {
+        flex: 0 0 70px;
+        width: 70px;
+        margin-right: 12px;
+      }
+      .content {
+        .title {
+          font-size: 24px;
+          line-height: 1.25;
+          letter-spacing: 0.48px;
+          color: $black-shade-1;
+        }
+        .desc {
+          margin-top: 15px;
+          font-size: 16px;
+          line-height: 1.38;
+          letter-spacing: 0.32px;
+          color: $black-shade-1;
+          &~.desc { 
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

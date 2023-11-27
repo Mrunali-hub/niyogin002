@@ -1,0 +1,47 @@
+.press-section {
+  text-align: center;
+  .press-content {
+    margin-top: 40px;
+    background-color: #f5f5f5;
+    padding: 80px 0 22px;
+    @media (max-width: 991.98px) {
+      padding-bottom: 0;
+    }
+    .press-card {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 0 rgba($black, 0.16);
+      background-color: #fff;
+      
+      @media (max-width: 991.98px) {
+        margin-bottom: 80px;
+      }
+    
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 75px;
+        margin-top: -70px;
+        background-color: #f1ecea;
+      }
+      .title {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.36px;
+        color: #1d1d1d;
+      }
+      .text {
+        line-height: 1.5;
+        color: #1d1d1d;
+        margin-top: 25px;
+      }
+      .link {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+.accordion {
+  .card {
+    border-radius: 0;
+    border-color: transparent;    
+    .card-header {
+      border-color: transparent;
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+
+      .btn {
+        position: relative;
+        display: flex;
+        color: $black-shade-1;
+        background-color: transparent;
+        border-color: transparent;
+        padding: 25px 120px 25px 25px;
+        border-radius: 0;
+        border-bottom: 1px solid #707070;
+        margin-bottom: 1px;
+
+        @media (max-width: 991.98px) {
+          padding: 25px 65px 25px 25px;
+        }
+
+        &.active {
+          background-color: $grey-shade-1;
+          border-bottom: 0;
+          &:before {
+            transform: translateY(-50%) rotate(-225deg);
+          }
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 30px;
+          transform: translateY(-50%) rotate(-45deg);
+          width: 19px;
+          height: 19px;
+          border: 2px solid $black-shade-1;
+          border-color: transparent transparent $black-shade-1 $black-shade-1;
+        }
+
+        .icon {
+          flex: 0 0 80px;
+          width: 80px;
+          margin-right: 24px;
+        }
+        .content {
+          text-align: left;
+          word-break: break-word;
+          span {
+            display: block;
+          }
+          .title {
+            font-size: 25px;
+            font-weight: 500;
+            color: $black-shade-1;
+          }
+          .text {
+            margin-top: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.32px;
+            color: $black-shade-1;
+            text-transform: none;
+          }
+          .partner {
+            margin-top: 20px;
+            font-weight: 500;
+
+          }
+        }
+      }
+    }
+    .collapse {
+      background-color: $grey-shade-1;
+      padding-bottom: 30px;
+      @media (max-width: 991.98px) {
+        padding-bottom: 15px;
+      }
+    } 
+  }
+
+  &.style-2 {
+    .card {
+      .card-header {        
+        .btn {
+          justify-content: space-between;
+          padding: 20px 62px 20px 67px;
+
+          @media (max-width: 991.98px) {
+            flex-direction: column;
+            padding: 20px 20px 20px 60px;
+          }
+          &:before {
+            left: 22px;
+            margin-top: -6px;
+          }
+          &[aria-expanded="true"] {
+            &:before {
+              margin-top: -4px;
+              transform: rotate( 135deg );
+            }
+          }
+          .list {
+            display: flex;
+            line-height: 1;
+            @media (max-width: 991.98px) {
+              margin-top: 10px;
+            } 
+            span {              
+              &.location {
+                font-size: 20px;
+                font-weight: 500;
+              }
+              &.date {
+                font-size: 18px;            
+              }
+              &~span {
+                margin-left: 60px;
+                padding-left: 60px;
+                border-left: 1px solid $black-shade-1;
+
+                @media (max-width: 991.98px) {
+                  margin-left: 15px;
+                  padding-left: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .collapse {
+        background-color: #fff;
+        padding: 0 56px;    
+        @media (max-width: 991.98px) {
+          padding: 0; 
+        }
+      } 
+    }
+  }
+
+  &.style-3 {
+    .card {   
+      .card-header {  
+        .btn {  
+          text-align: left;
+          font-size: 35px;
+          text-transform: none;        
+          font-weight: 400;
+          border-bottom-color: #e8e3e0;
+          padding-left: 0;
+
+          @media (max-width: 991.98px) {
+            font-size: 30px;
+          }
+
+          &[aria-expanded="true"] {
+            color: #c8af91;
+            background-color: transparent;            
+            &:after {
+              display: none;
+            }
+          }
+
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(-1deg);
+            background-color: $black-shade-1;
+            border: 0;
+          }
+
+          &:before {
+            right: 12px;
+            width: 16.5px;
+            height: 2.5px;
+          }
+
+          &:after {
+            right: 19px;
+            width: 2.5px;
+            height: 16.5px;
+          }
+
+        }
+      }
+      .collapse {
+        background-image: linear-gradient(to bottom, #f9f9f9, #f9f9f9);
+        padding: 0 25px;
+        font-size: 18px;
+        line-height: 2.22;
+        letter-spacing: .36px;
+        @media (max-width: 991.98px) {
+          padding: 15px;
+        }
+        .title {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        .heading {
+          font-weight: 500;
+        }
+      } 
+    }
+  }
+
+  &.secondary {
+    .card {
+      border-radius: 0;
+      border: 0;    
+      .card-header {
+        border-color: transparent;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+  
+        .btn {
+          text-transform: none;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: left;
+          padding: 10px 50px 10px 20px;
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+          background-color: #fff;
+          border: 0;
+  
+          &[aria-expanded="true"] {            
+            &:after {
+              display: none;
+            }
+          }
+
+          &:before,
+          &:after {
+            transform: none;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 19px;
+            right: 18px;
+            width: 18px;
+            height: 5px;
+            background-color: $black-shade-1;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 13px;
+            right: 24px;
+            width: 6px;
+            height: 18px;
+            background-color: $black-shade-1;
+          }
+
+        }
+      }
+      .collapse {
+        background-color: #e8e3e0;
+        padding: 0;
+        @media (max-width: 991.98px) {
+          padding: 15px;
+        }
+      } 
+    }
+
+    &.reverse {
+      .card {          
+        .card-header {
+          .btn {
+            background-color: #f5f5f5;
+            @media (max-width: 991.98px) {
+              text-align: left;
+            }
+          }
+        }
+        .collapse {
+          background-color: #fff;          
+        } 
+      }
+    }
+  }
+}

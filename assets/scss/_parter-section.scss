@@ -1,0 +1,22 @@
+.parter-section {
+  text-align: center;
+  padding-bottom: 150px;
+
+  @media (max-width: 991.98px) {
+    padding-bottom: 60px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+  .material-form { 
+    margin-top: 25px;
+
+    .btn {
+      margin-top: 25px;
+      @media (max-width: 991.98px) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

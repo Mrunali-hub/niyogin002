@@ -1,0 +1,49 @@
+.cards-section {
+  padding-top: 120px;
+  text-align: center;
+  .section-title {
+    margin-bottom: 60px;
+  }
+
+  .card {
+    flex: 1;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(64, 58, 83, 0.1);
+    border: solid 1px rgba(37, 47, 68, 0.2);
+    background-color: #fff;
+    margin: 10px;
+
+    &:hover {
+      background-color: #e8e3e0;
+      .icon {
+        background-color: #fff;
+      }
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 126px;
+      height: 126px;
+      background-color: #f1ecea;
+      border-radius: 50%;
+      margin: auto;
+      overflow: hidden;        
+    }
+    .title {
+      margin-top: 23px;
+      font-size: 26px;
+      font-weight: 500;
+      color: $black-shade-1;
+    }
+    .text {
+      margin: 20px 0 0;
+      font-size: 16px;
+      line-height: 1.56;
+      letter-spacing: 0.32px;
+      color: $black-shade-1;
+    }
+
+  }
+}

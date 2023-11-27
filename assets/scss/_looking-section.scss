@@ -1,0 +1,101 @@
+.looking-section {
+  padding-top: 100px;
+
+  .section-title {
+    text-align: center;
+  }
+
+  .search-section {
+    margin-top: 50px;
+    text-align: center;
+    .title {
+      font-size: 30px;
+      letter-spacing: 0.6px;
+    }
+    .text {
+      font-size: 20px;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+    }
+  }
+  .search-content {
+    text-align: left;
+    margin-top: 40px;
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+    }
+    .search-form {
+      padding: 5px;
+      margin: 40px 47px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.16);
+      border: solid 1px #252f44;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      @media (max-width: 991.98px) {
+        margin: 40px 0;
+        display: block;
+        flex-direction: column;
+      }
+      .input {
+        font-size: 20px;
+        line-height: 1.25;
+        flex: 1;
+        border: 0;
+        background-color: transparent;
+        margin: 0 30px;
+        height: 39px;
+        @media (max-width: 991.98px) {
+          border-bottom: 1px solid rgba($black-shade-1, .5);
+          margin-bottom: 10px;
+        }
+        &:focus,
+        &:focus-visible,
+        &:active {
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+      .dropdown {
+        @media (max-width: 991.98px) {
+          display: flex;
+          margin: 5px 10px;
+        }
+        &.dropdown {
+          margin-left: 30px;
+          @media (max-width: 991.98px) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .accordion {
+    .collapse {
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.67;
+        color: #1d1d1d;
+      }
+      .text {
+        margin: 20px 0 50px;
+        font-size: 16px;
+        line-height: 1.56;
+        color: #1d1d1d;
+      }
+      .list-unstyled {
+        li {
+          color: #1d1d1d;
+        }
+      }
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+}

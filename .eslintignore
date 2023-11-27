@@ -1,0 +1,10 @@
+.nuxt
+static/sw.js
+package.json
+package-lock.json
+README.md
+CHANGELOG.md
+jsconfig.json
+assets/
+styles/
+static/

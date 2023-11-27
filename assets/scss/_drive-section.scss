@@ -1,0 +1,74 @@
+.drive-section {
+  padding: 150px 0;
+  text-align: center;
+  
+  @media (max-width: 991.98px) {
+    padding: 100px 0;
+  }
+  .section-title {
+    margin-bottom: 60px;
+  }
+  .drive-card {
+    position: relative;
+    border-radius: 10px;    
+    overflow: hidden;
+    margin: 10px 20px;
+
+    &:hover {
+      .caption {
+        display: flex;
+      }
+    }    
+    .img-fluid {
+      border-radius: 10px;      
+    }
+    .caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      color: $white;
+      font-size: 18px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: none;
+      padding: 30px; 
+      height: 100%;
+      background-color: rgba($black, .5);
+
+      @media (max-width: 991.98px) {
+        font-size: 14px;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 20px;
+
+        @media (max-width: 991.98px) {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .list-unstyled {
+        margin-top: 10px;
+        overflow-y: auto;
+        li {
+          font-size: 16px;
+          color: $white;
+          &~li {
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .read-more {
+        font-weight: 500;
+        color: $white;
+      }
+    }
+  }
+}

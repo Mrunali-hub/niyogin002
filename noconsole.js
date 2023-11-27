@@ -1,0 +1,6 @@
+module.exports = {
+  rules: {
+    "no-console": ["error", { allow: ["warn", "error"] }],
+    "no-debugger": "error",
+  },
+};

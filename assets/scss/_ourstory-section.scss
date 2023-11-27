@@ -1,0 +1,25 @@
+.ourstory-section {
+  position: relative;
+  padding: 137px 0 343px;
+
+  @media (max-width: 991.98px) {
+    padding: 0;
+    text-align: center;
+  }
+  .right-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 45vw;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: 991.98px) {
+      position: relative;
+      transform: none;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+}

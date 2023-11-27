@@ -1,0 +1,53 @@
+.investors-relations-section {
+  text-align: center;
+  padding: 76px 0;
+  .section-desc {
+    margin-top: 40px;
+  }
+  .services {
+    padding-top: 145px;
+
+    @media (max-width: 991.98px) {
+      padding-top: 70px;
+    }
+
+
+    .list-unstyled {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 70px;
+      margin: 165px 0 90px;
+
+      @media (max-width: 991.98px) {
+        margin: 50px 0 0;
+        gap: 50px;
+      }
+      li {
+        flex: 0 0 25%;
+        @media (max-width: 575.98px) {
+          flex: 0 0 100%;
+        }
+        .img {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 104px;
+          height: 104px;
+          background-color: #f1ecea;
+          border-radius: 50%;
+        }
+        .title {
+          margin-top: 28px;
+          font-size: 26px;
+          font-weight: 500;
+        }
+        .text {
+          margin-top: 15px;
+          line-height: 1.56;
+          letter-spacing: 0.32px;
+        }
+      }
+    }
+  }
+}

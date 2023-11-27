@@ -1,0 +1,9 @@
+<svg id="social-facebook-circular-button" xmlns="http://www.w3.org/2000/svg" width="28.178" height="28.178" viewBox="0 0 28.178 28.178">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="Path_16" data-name="Path 16" class="cls-1" d="M14.089 0a14.089 14.089 0 1 0 14.089 14.089A14.089 14.089 0 0 0 14.089 0zm0 25.977a11.888 11.888 0 1 1 11.888-11.888 11.888 11.888 0 0 1-11.888 11.888z"/>
+    <path id="Path_17" data-name="Path 17" class="cls-1" d="M202.456 133.267h-2.641v-1.927c0-.591.612-.728.9-.728h1.706v-2.6l-1.955-.01a3 3 0 0 0-3.277 3.183v2.084h-1.939v2.68h1.936v7.235h2.629v-7.235h2.233z" transform="translate(-184.764 -121.502)"/>
+</svg>

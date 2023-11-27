@@ -1,0 +1,49 @@
+.mission-vision-section {
+  padding: 100px 0;
+  .list-unstyled {
+    display: flex;
+    justify-content: center;
+    gap: 0 90px;
+    @media (max-width: 991.98px) {
+      flex-direction: column;
+      gap: 70px 0;
+    }
+    li {
+      flex: 0 0 340px;
+      width: 340px;
+      text-align: center;
+      box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+      border: solid 3px #e8e3e0;
+      border-radius: 20px;
+      @media (max-width: 991.98px) {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+      .icon {
+        padding: 29px 20px 20px;
+        border-radius: 15px 15px 0 0;
+        background-color: #e8e3e0;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        color: $black-shade-1;
+        background-color: $grey-shade-1;
+      }
+      .text {
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        @media (max-width: 991.98px) {
+          font-size: 18px;
+          line-height: 1.39;
+          letter-spacing: 0.36px;
+        }
+      }
+    }
+  }
+}

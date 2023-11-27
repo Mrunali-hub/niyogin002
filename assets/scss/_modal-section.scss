@@ -1,0 +1,25 @@
+.modal-section {
+  padding: 60px 160px;
+  @media (max-width: 991.98px) {
+    padding: 50px 10px;
+  }
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .desc {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .button {
+    margin-top: 40px;
+    text-align: center;
+  }
+}

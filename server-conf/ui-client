@@ -1,0 +1,23 @@
+server {
+  listen   80;
+  listen [::]:80;
+  try_files $uri /index.html;
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_set_header X-NginX-Proxy true;
+    proxy_pass http://127.0.0.1:3000;
+    proxy_redirect off;
+    #root   /mnt/volume_blr1_01/food-app-web/dist/;
+#    try_files $uri /index.html;
+    #try_files $uri $uri/ =404;  
+#    index  index.html;
+            # kill cache
+        add_header Last-Modified $date_gmt;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+        if_modified_since off;
+        expires off;
+        etag off;
+ }
+}
